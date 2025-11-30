@@ -1,0 +1,5 @@
+{
+  "name": "Dashboard center)Portfolio",
+  "description": "A responsive and interactive sidebar navigation component for a dashboard application, built with React, TypeScript, and Tailwind CSS. It features collapsible sections, light and dark modes, and tooltips for a compact view.",
+  "requestFramePermissions": []
+}
