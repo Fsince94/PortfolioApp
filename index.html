@@ -5,73 +5,33 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard Sidebar</title>
-    <!-- 💡 Fuentes elegantes importadas desde Google Fonts -->
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        darkMode: 'class',
-        theme: {
-          extend: {
-            // 💡 Se definen las nuevas familias de fuentes para un look más elegante.
-            // 'font-sans' (Lato) se usará para el cuerpo del texto y la UI.
-            // 'font-serif' (Playfair Display) se usará para los títulos.
-            fontFamily: {
-              sans: ['Lato', 'sans-serif'],
-              serif: ['Playfair Display', 'serif'],
-            },
-            // 💡 Nueva escala de fuentes, aumentada en un 44% total para una legibilidad superior.
-            fontSize: {
-              'xs': ['1.08rem', { lineHeight: '1.4rem' }],
-              'sm': ['1.26rem', { lineHeight: '1.8rem' }],
-              'base': ['1.44rem', { lineHeight: '2.1rem' }],
-              'lg': ['1.62rem', { lineHeight: '2.5rem' }],
-              'xl': ['1.8rem', { lineHeight: '2.5rem' }],
-              '2xl': ['2.16rem', { lineHeight: '2.9rem' }],
-              '3xl': ['2.7rem', { lineHeight: '3.2rem' }],
-              '4xl': ['3.24rem', { lineHeight: '3.6rem' }],
-              '5xl': ['4.32rem', { lineHeight: '1' }],
-              '6xl': ['5.4rem', { lineHeight: '1' }],
-            },
-            colors: {
-              // 🎨 Nueva paleta de colores para el modo oscuro
-              'dark-primary': '#0F1C2E',       // --bg-100
-              'dark-secondary': '#1f2b3e',     // --bg-200
-              'dark-tertiary': '#374357',      // --bg-300
-              
-              // 🎨 Nueva paleta de colores para el modo claro
-              'light-primary': '#fffefb',      // --bg-100
-              'light-secondary': '#f5f4f1',    // --bg-200
-              'light-tertiary': '#cccbc8',     // --bg-300
-
-              // 🎨 Nuevo color de acento para elementos interactivos
-              'accent-premium': '#71c4ef',     // --accent-100
-            }
-          }
-        }
-      }
-    </script>
-    <!-- 💾 SQL.js para base de datos local -->
+    <!-- SQL.js WASM Loader (Still needed via CDN or copied to public folder, keeping CDN for simplicity in this file) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/sql-wasm.js"></script>
   <script type="importmap">
 {
   "imports": {
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
     "react-dom": "https://aistudiocdn.com/react-dom@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1",
+    "vite": "https://aistudiocdn.com/vite@^7.2.4",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "vitest": "https://aistudiocdn.com/vitest@^4.0.14",
     "@testing-library/react": "https://aistudiocdn.com/@testing-library/react@^16.3.0",
-    "vitest": "https://aistudiocdn.com/vitest@^4.0.10",
-    "@lottiefiles/dotlottie-react": "https://esm.sh/@lottiefiles/dotlottie-react?external=react,react-dom"
+    "@lottiefiles/dotlottie-react": "https://aistudiocdn.com/@lottiefiles/dotlottie-react@^0.17.8"
   }
 }
 </script>
 </head>
   <body>
     <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
